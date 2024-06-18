@@ -1,0 +1,4 @@
+select * from emp
+where salary < (select max(salary) from emp ) 
+order by salary desc
+limit 1
