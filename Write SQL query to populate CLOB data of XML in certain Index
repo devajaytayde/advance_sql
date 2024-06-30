@@ -1,1 +1,3 @@
 select DBMS_SUBSTR(column_name, start_index, end_index) from xml_table
+
+***column_name is in "CLOB" form to store XML file
