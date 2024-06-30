@@ -1,0 +1,17 @@
+Oracle PL/SQL-
+select * from dual
+where rownum < 'here put the number of rows to fetch'
+
++ If you need select max 1 salary
+
+    select salary from employee
+    where rownum < 2
+    order by salary desc
+
++ If you need to select mininum salary of employee, 
+    select salary from employee
+    where rownum < 2
+    order by salary asc
+
++ If you need to find second maximum/heighest salary, 
+    *******
