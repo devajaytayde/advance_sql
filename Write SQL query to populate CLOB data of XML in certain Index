@@ -1,0 +1,1 @@
+select DBMS_SUBSTR(column_name, start_index, end_index) from xml_table
