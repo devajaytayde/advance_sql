@@ -1,0 +1,1 @@
+select SUBSTRING(COLUMN_NAME, START_INDEX, END_INDEX) * from Dual;
