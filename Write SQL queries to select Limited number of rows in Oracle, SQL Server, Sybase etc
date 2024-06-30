@@ -1,17 +1,38 @@
 Oracle PL/SQL-
-select * from dual
-where rownum < 'here put the number of rows to fetch'
+    +  If you need to select top 10 records
+    select * from dual
+    where rownum < 'here put the number of rows to fetch'
 
-+ If you need select max 1 salary
-
+    + If you need select max 1 salary
     select salary from employee
     where rownum < 2
     order by salary desc
 
-+ If you need to select mininum salary of employee, 
+    + If you need to select mininum salary of employee, 
     select salary from employee
     where rownum < 2
     order by salary asc
 
-+ If you need to find second maximum/heighest salary, 
-    *******
+    + If you need to find second maximum/heighest salary, 
+    *****In-Progress****
+
+
+MICROSOFT SQL SERVER <Any Edition> - 
+    + Fetch only 10 records from table 
+    select top 10 * from dual
+
+Sybase -
+    + Fetch only 10 records from table 
+    select top 10 * from dual
+
+MySQL - 
+    + Fetch only 10 records from table 
+    select * from dual
+    limit 10
+
+MongoDB -
+    *****In-Progress****
+
+NoSQL -
+    *****In-Progress****
+
