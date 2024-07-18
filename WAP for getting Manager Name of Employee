@@ -1,0 +1,13 @@
+Emp table
+| Emp Id | Ename | Dept | Manager ID |
+| 100001 | John  | CS   | 300001     |
+| 200001 | Paul  | CS   | 300001     |
+| 300001 | Eric  | CS   | 400001     |
+| 400001 | Lary  | CS   | 500001     |
+
+
+
+select m.Ename as "Manager Name", e.Ename as "Employee Name" from emp e inner join emp m
+on e.emp_id = m.manager_id
+where emp_id in ( 1000001, 2000001, 3000001)
+
