@@ -1,0 +1,16 @@
+1..Using ON operator
+
+select * from EMP e inner join DEPT d
+on e.EmployeeID = d.EmployeeID 
+
+
+2..Using WHERE operator
+select * from EMP e inner join DEPT d
+where e.EmployeeID = d.EmployeeID 
+
+
+3..Self Join
+select * from EMP e inner join EMP m
+on e.EmployeeID = e.ManagerID 
+
+
