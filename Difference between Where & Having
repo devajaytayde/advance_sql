@@ -1,0 +1,34 @@
+Where Clause -  
+              Work on Row level for a Table provided in a Select query
+
+              For ex.
+              EmpId | Ename
+              10001 | ABC1
+              10002 | ABC2
+              10003 | ABC3
+              10004 | ABC4
+
+              select * from Emp
+              where EmpId = 10004
+
+              >>
+              EmpId | Ename
+              10004 | ABC4
+
+Having Clause -  
+              Work on Group level along with GROUP BY clause for a Table provided in a Select query
+
+              For ex.
+              EmpId | Ename | Dept | Salary
+              10001 | ABC1  | IT   | 10K
+              10002 | ABC2  | HR   | 20K
+              10003 | ABC3  | IT   | 30K
+              10004 | ABC4  | HR   | 40K
+
+               select * from Emp
+               group by dept
+               having salary > 30K
+
+              >>
+              EmpId | Ename | Dept | Salary
+              10004 | ABC4  | HR   | 40K
