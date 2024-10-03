@@ -1,0 +1,26 @@
+Oracale -
+
+    SELECT table_name, column_name, data_type, data_length
+    FROM USER_TAB_COLUMNS
+    WHERE table_name = 'MYTABLE'
+
+
+SQL Server -
+    
+    SELECT [name] AS [Column Name]
+    FROM syscolumns
+    WHERE id = (SELECT id FROM sysobjects WHERE type = 'V' AND [Name] = 'Your table name')
+
+    Note-     Type = 'V' for views Type = 'U' for tables
+
+
+SQLite -
+    PRAGMA table_info(table-name);
+
+MySQL -
+    SELECT column_name 
+    FROM information_schema.columns 
+    WHERE 
+    table_schema = 'Schema' AND table_name = 'Table_Name'
+
+
