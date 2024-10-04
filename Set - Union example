@@ -1,0 +1,18 @@
+💡 Union is similar to Inner Join
+💡 Union is adding two tables with Similar data but Non-repeated rows(if match found)
+💡 Union is used only when both tables has similar Column names
+    For ex.
+    Emp
+    EmpID | Name  | Dept
+    10001 | Name1 | Dept1
+    10002 | Name2 | Dept2
+    10003 | Name3 | Dept1
+
+    Salary
+    EmpID | Salary 
+    10001 | 5k
+    10002 | 10k
+    10003 | 15k
+
+
+
